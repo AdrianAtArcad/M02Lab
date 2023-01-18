@@ -36,7 +36,7 @@
      D  sflend                80     80n
 
      D info            ds
-     D  lrrn                 378    379i 0
+     D  mine                 378    379i 0
 
      D rrn01           s              5i 0
      D rrs01           s              5i 0
@@ -137,8 +137,8 @@
 
          write key01;
          exfmt ctl01;
-         if LRRN <>0;
-           RRb01 = LRRN;
+         if mine <>0;
+           RRb01 = mine;
          endif;
          step01 = key;
        endsr;

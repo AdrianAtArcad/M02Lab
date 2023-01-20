@@ -1,15 +1,18 @@
 {
-    "description": "Merlin02",
-    "version": "0.0.1",
-    "includePath": [
-        "M02_SRC/QPROTOSRC    "
-    ],
-    "repository": "git@github.com:AdrianAtArcad/M02Lab.git",
-    "objlib": "&L01",
-    "curlib": "*CRTDFT",
-    "extensions": {
-        "arcad": {
-            "libraryPrefix": "M02"
-        }
+  "description": "Merlin02",
+  "version": "0.0.1",
+  "includePath": [
+    "M02_SRC/QPROTOSRC    "
+  ],
+  "repository": "git@github.com:AdrianAtArcad/M02Lab.git",
+  "objlib": "&verlibm02",
+  "curlib": "*CRTDFT",
+  "extensions": {
+    "arcad": {
+      "libraryPrefix": "M02",
+      "code": "M02"
     }
+  },
+  "buildCommand": "elias compile {branch}",
+  "compileCommand": "elias compile {branch} -f {files}"
 }
